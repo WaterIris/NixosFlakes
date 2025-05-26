@@ -23,8 +23,8 @@
   wayland.windowManager.hyprland = {
     enable = true;
     systemd = { 
-      enable = true;
-      #variables = ["--all"];
+      # enable = true;
+      variables = ["--all"];
     };  
 
     settings = {
@@ -59,17 +59,11 @@
           
         "opacity 0.90,focus:1,class:kitty"
         "opacity 0.80,focus:0,class:kitty"
-        
-        "workspace 1, class:kitty"
-        "workspace 2, class:firefox"
-        "workspace 3, class:obsidian"
-        "workspace 6, class:Spotify"
       ];
 
       exec-once = [ 
         "waybar"
         "dunst"
-        "copyq --start-server"
       ];
 
       misc = {

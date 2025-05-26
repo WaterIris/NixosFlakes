@@ -1,6 +1,7 @@
 {pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
+    brightnessctl
     blueman
     chromium
     vscode
