@@ -26,6 +26,7 @@
             "pulseaudio"
             "temperature"
             "battery"
+            "custom/battery"
           ];
 
 	        "hyprland/workspaces" = {
@@ -79,7 +80,7 @@
 
           "pulseaudio" = {
 		        tooltip = true;
-		        scroll-step = 5;
+		        scroll-step = 2;
 		        format = "{icon}  {volume}%";
 		        format-icons = {
 			        "default" = [""  ""  ""];
@@ -121,6 +122,11 @@
               "󰂂"
               "󰁹"
             ];
+          };
+
+          "custom/battery" = {
+            "exec" = "~/.config/notifs/battery.sh";
+            "interval" = 120;
           };
         }
       ];

@@ -27,7 +27,6 @@
     };  
 
     settings = {
-
       input = {
         kb_layout = "pl";
         natural_scroll = true;
