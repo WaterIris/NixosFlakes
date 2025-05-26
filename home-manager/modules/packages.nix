@@ -1,6 +1,8 @@
 {pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
+    blueman
+    chromium
     vscode
     nnn
     feh
