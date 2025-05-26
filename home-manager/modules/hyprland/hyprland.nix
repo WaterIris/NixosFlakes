@@ -23,14 +23,14 @@
   wayland.windowManager.hyprland = {
     enable = true;
     systemd = { 
-      # enable = true;
       variables = ["--all"];
     };  
 
     settings = {
 
       input = {
-        "kb_layout" = "pl";
+        kb_layout = "pl";
+        natural_scroll = true;
       };
 
       "$terminal" = "kitty";
@@ -127,9 +127,9 @@
       ];
 
       general = {
-        gaps_in = "0px";
-        gaps_out = "0px";
-        border_size = 0;
+        gaps_in = "4px";
+        gaps_out = "8px";
+        border_size = 2;
         "col.active_border" = "rgb(2e3859)";
         "col.inactive_border" = "rgb(101319)";
         layout = "dwindle";
@@ -146,7 +146,7 @@
       };
       
       decoration = {
-        rounding = 0;
+        rounding = 8;
         blur = {
           enabled = true;
         };

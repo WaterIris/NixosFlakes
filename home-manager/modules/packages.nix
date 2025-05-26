@@ -1,30 +1,31 @@
 {pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
-    brightnessctl
-    blueman
-    chromium
-    vscode
-    nnn
-    feh
-    nautilus
-    # lf
-    lazygit
-    lazydocker
-    obsidian
-    tree
-    inputs.nixvim.packages.${system}.default
-    pavucontrol
-    neofetch
-    nvtopPackages.nvidia
-    htop
-    firefox
-    ripgrep
-    imagemagick
-    usbutils
-    acpi
-    spotify
+    # system basics
     zip
     unzip
+    ripgrep
+    brightnessctl
+    feh
+    usbutils
+    acpi
+    # cli
+    neofetch
+    nnn
+    lazygit
+    lazydocker
+    tree
+    htop
+    imagemagick
+    nvtopPackages.nvidia
+    inputs.nixvim.packages.${system}.default
+    # apps
+    blueman
+    nautilus
+    vscode
+    obsidian
+    pavucontrol
+    firefox
+    spotify
   ];
 }
