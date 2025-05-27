@@ -41,8 +41,8 @@
       setw -g mode-style "fg=black bg=red bold"
 
       # panes
-      set -g pane-border-style "fg=red"
-      set -g pane-active-border-style "fg=blue"
+      set -g pane-border-style "fg=#2e3859"
+      set -g pane-active-border-style "fg=#e7ebf6"
 
       # statusbar
       set -g status-position bottom
@@ -57,11 +57,11 @@
       set -g status-right "#[bg=#101319 fg=#2e3859]#[bg=#2e3859 fg=#e7ebf6] %d-%m-%Y #[bg=#2e3859 fg=#101319]"
 
       setw -g window-status-current-style "fg=black bg=red bold"
-      setw -g window-status-current-format '#[bg=blue fg=#101320]#[bg=blue fg=#101319] #I #W #[bg=#101319 fg=blue]#[bg=#101319 fg=blue]'
+      setw -g window-status-current-format '#[bg=#2e3859 fg=#101320]#[bg=#2e3859 fg=#e7ebf6] #I #W #[bg=#101319 fg=#2e3859]#[bg=#101319 fg=#2e3859]'
 
       setw -g window-status-style "fg=red"
       setw -g window-status-separator ""
-      setw -g window-status-format "#[bg=#101319 fg=blue] #I #[fg=blue]#W "
+      setw -g window-status-format "#[bg=#101319 fg=#e7ebf6] #I #[fg=#e7ebf6]#W "
 
       setw -g window-status-bell-style "fg=yellow bg=red bold"
 

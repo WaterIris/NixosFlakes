@@ -29,7 +29,10 @@
     settings = {
       input = {
         kb_layout = "pl";
-        natural_scroll = true;
+        touchpad = {
+          disable_while_typing = true;
+          natural_scroll = true;
+        };
       };
 
       "$terminal" = "kitty";
@@ -129,8 +132,8 @@
         gaps_in = "4px";
         gaps_out = "8px";
         border_size = 2;
-        "col.active_border" = "rgb(2e3859)";
-        "col.inactive_border" = "rgb(101319)";
+        "col.active_border" = "rgb(bcc6e3)";
+        "col.inactive_border" = "rgb(2e3859)";
         layout = "dwindle";
       };
 
