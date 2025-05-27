@@ -49,12 +49,12 @@
       set -g status-justify left
       set -g status-style "fg=red"
 
-      set -g status-left "#{?client_prefix,#[bg=blue fg=terminal],#[bg=blue fg=black]}   #[bg=#101320 fg=blue]"
+      set -g status-left "#{?client_prefix,#[bg=#2e3859 fg=#fb80aa],#[bg=#2e3859 fg=#e7ebf6]}   #[bg=#101320 fg=#2e3859]"
       set -g status-left-length 0
 
 
       set -g status-right-style "fg=black bg=yellow"
-      set -g status-right "#[bg=#101319 fg=cyan]#[bg=cyan fg=#101319] %d-%m-%Y #[bg=cyan fg=#101319]"
+      set -g status-right "#[bg=#101319 fg=#2e3859]#[bg=#2e3859 fg=#e7ebf6] %d-%m-%Y #[bg=#2e3859 fg=#101319]"
 
       setw -g window-status-current-style "fg=black bg=red bold"
       setw -g window-status-current-format '#[bg=blue fg=#101320]#[bg=blue fg=#101319] #I #W #[bg=#101319 fg=blue]#[bg=#101319 fg=blue]'

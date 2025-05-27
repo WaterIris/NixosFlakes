@@ -19,6 +19,7 @@
     imagemagick
     nvtopPackages.nvidia
     inputs.nixvim.packages.${system}.default
+    dua
     # apps
     blueman
     nautilus
