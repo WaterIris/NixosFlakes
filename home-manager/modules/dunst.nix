@@ -7,7 +7,7 @@
         font = "JetBrainsMono Nerd Font";
         corner_radius = 8;
         origin = "top-right";
-        offset = "10x96";
+        offset = "8x8";
         frame_width = 2;
         background = "#101319";
         foreground = "#e7ebf6";
