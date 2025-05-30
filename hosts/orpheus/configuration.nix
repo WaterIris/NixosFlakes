@@ -76,7 +76,7 @@
     enable = true;
     settings = {
       START_CHARGE_THRESH_BAT0 = 0; # Dummy value
-      STOP_CHARGE_THRESH_BAT0 = 0; # Actualy enables conservation mode
+      STOP_CHARGE_THRESH_BAT0 = 1; # Actualy enables conservation mode
       };
   };
 
