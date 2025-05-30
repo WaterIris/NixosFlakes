@@ -42,7 +42,7 @@
 
       # panes
       set -g pane-border-style "fg=#2e3859"
-      set -g pane-active-border-style "fg=#e7ebf6"
+      set -g pane-active-border-style "fg=#2e3859"
 
       # statusbar
       set -g status-position bottom

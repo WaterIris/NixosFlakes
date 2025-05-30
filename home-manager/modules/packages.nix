@@ -10,6 +10,7 @@
     usbutils
     acpi
     # cli
+    zoxide
     neofetch
     nnn
     lazygit
@@ -21,6 +22,8 @@
     inputs.nixvim.packages.${system}.default
     dua
     # apps
+    chromium
+    qbittorrent
     blueman
     nautilus
     vscode

@@ -4,11 +4,11 @@
     enable = true;
     settings = {
       preload = [
-        "~/.config/backgrounds/anime_gruv.png" 
+        "~/.config/backgrounds/tori_gate.png" 
       ];
 
       wallpaper = [
-        ",~/.config/backgrounds/anime_gruv.png"
+        ",~/.config/backgrounds/tori_gate.png"
        ];
     };
 

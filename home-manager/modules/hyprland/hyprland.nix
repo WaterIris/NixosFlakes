@@ -53,14 +53,14 @@
       ];
 
       windowrulev2 = [ 
-        "opacity 0.90, focus:1"
-        "opacity 0.70, focus:0"
+        # "opacity 0.90, focus:1"
+        # "opacity 0.70, focus:0"
 
-        "opacity 1.00,focus:1,class:firefox"
-        "opacity 0.80,focus:0,class:firefox"
+        # "opacity 1.00,focus:1,class:firefox"
+        # "opacity 0.80,focus:0,class:firefox"
           
-        "opacity 0.90,focus:1,class:kitty"
-        "opacity 0.80,focus:0,class:kitty"
+        # "opacity 0.90,focus:1,class:kitty"
+        # "opacity 0.80,focus:0,class:kitty"
       ];
 
       exec-once = [ 
@@ -129,11 +129,11 @@
       ];
 
       general = {
-        gaps_in = "4px";
-        gaps_out = "8px";
+        gaps_in = "8px";
+        gaps_out = "16px";
         border_size = 2;
-        "col.active_border" = "rgb(2e3859)";
-        "col.inactive_border" = "rgb(2e3859)";
+        "col.active_border" = "rgb(101319)";
+        "col.inactive_border" = "rgb(101319)";
         layout = "dwindle";
       };
 

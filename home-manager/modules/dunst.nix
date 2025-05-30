@@ -6,8 +6,8 @@
       global = {
         font = "JetBrainsMono Nerd Font";
         corner_radius = 8;
-        origin = "top-right";
-        offset = "8x8";
+        origin = "top-center";
+        offset = "0x40";
         frame_width = 2;
         background = "#101319";
         foreground = "#e7ebf6";

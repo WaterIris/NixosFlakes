@@ -10,10 +10,10 @@
       italic_font = "auto";
       bold_font = "auto";
       bold_italic_font = "auto";
-      font_size = "12.0";
+      font_size = "10.0";
 
       background_blur = 0; 
-      # adjust_line_height = 3;
+      adjust_line_height = 3;
       adjust_column_width = 0;
 
       force_ltr = "yes";
