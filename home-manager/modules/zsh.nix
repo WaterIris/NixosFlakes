@@ -64,7 +64,7 @@
       ls = "eza";
       ll = "eza -alh";
       tree = "eza --tree";
-      tt = "~/.config/tmux/tmux_start.sh";
+      tt = "tmux";
 
     };
     history = {

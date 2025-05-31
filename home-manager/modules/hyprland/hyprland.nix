@@ -66,6 +66,9 @@
       exec-once = [ 
         "waybar"
         "dunst"
+        "[workspace 1 silent] kitty"
+        "[workspace 2 silent] firefox"
+        "[workspace 3 silent] obsidian"
       ];
 
       misc = {

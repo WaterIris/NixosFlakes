@@ -7,44 +7,31 @@
 
 window#waybar{
   all:unset;
-  background: #101319;
   padding:0px;
+  background: #101319;
 }
 
 .modules-left {
   padding:4px;
-  /*margin-top:4px;*/
-  /*margin-right:0px;*/
-  /*margin-bottom:0px;*/
-  /*margin-left:8px;*/
-  /*border-radius:16px;*/
-  background: #101319;
 }
 
 .modules-center {
   padding:4px;
-  /*margin-top:4px;*/
-  /*margin-right:0px;*/
-  /*margin-bottom:0px;*/
-  /*margin-left:0px;*/
-  /*border-radius:16px;*/
-  background: #101319;
 }
 
 .modules-right {
   padding:4px;
-  /*margin-top:4px;*/
-  /*margin-right:8px;*/
-  /*margin-bottom:0px;*/
-  /*margin-left:0px;*/
-  /*border-radius:16px;*/
-  background: #101319;
 }
 
 
 #clock, #battery, #pulseaudio, #network, #disk, #memory, #cpu, #temperature  {
   padding: 0 4px;
   margin: 0 4px;
+  background: #101319;
+  padding-right: 8px;
+  padding-left: 16px;
+  margin-right: 4px;
+  margin-left: 4px;
 }
 
 #workspaces {
@@ -54,8 +41,13 @@ window#waybar{
 #workspaces button {
   all:unset;
   padding: 0px 4px;
-	color: #e7ebf6;
+	color: #bcc6e3;
   transition: all .2s ease;
+  background: #101319;
+  padding-right: 8px;
+  padding-left: 16px;
+  margin-right: 4px;
+  margin-left: 4px;
 }
 
 #workspaces button:hover {
@@ -65,36 +57,35 @@ window#waybar{
 }
 
 #workspaces button.active {
-  color: #52a9a9;
-  border: none;
+  color: #56b8f7;
 }
 
 #workspaces button.empty {
 	color: #5b6078;
-  border: none;
 }
 
 #workspaces button.empty:hover {
 	color: #5b6078;
-  border: none;
   transition: all 1s ease;
 }
 
 #workspaces button.empty.active {
-  color: #63c0bf;
-  border: none;
+  color: #56b8f7;
 }
 
 #clock {
-	color: #5b6078;
+	color: #56b8f7;
+  margin-left: 16px;
 }
 
 #battery {
-	color: #5b6078;
+	color: #83C092;
+  margin-right: 16px;
 }
 
 #battery.critical {
   color: #fb80aa;
+  margin-right: 16px;
 }
 
 #temperature {

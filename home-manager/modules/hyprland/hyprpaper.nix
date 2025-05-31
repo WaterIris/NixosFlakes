@@ -4,11 +4,11 @@
     enable = true;
     settings = {
       preload = [
-        "~/.config/backgrounds/tori_gate.png" 
+        "~/.config/backgrounds/city.png"
       ];
 
       wallpaper = [
-        ",~/.config/backgrounds/tori_gate.png"
+        ",~/.config/backgrounds/city.png"
        ];
     };
 
