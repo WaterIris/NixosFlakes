@@ -82,7 +82,7 @@
   };
 
   home.file.".config/kitty/colors.conf" = {
-    source = ./iri.conf;
+    source = ./style.conf;
   };
 
 }
