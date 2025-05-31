@@ -4,11 +4,11 @@
     enable = true;
     settings = {
       preload = [
-        "~/.config/backgrounds/Lake-Ai.png"
+        "~/.config/backgrounds/Wild-Clouds.png"
       ];
 
       wallpaper = [
-        ",~/.config/backgrounds/Lake-Ai.png"
+        ",~/.config/backgrounds/Wild-Clouds.png"
        ];
     };
 
