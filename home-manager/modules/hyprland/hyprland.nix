@@ -90,6 +90,7 @@
         "$mod, S, exec, $screen_shot"
         "$mod, R, exec, $run"
         "$mod, P, exec, $off"
+        "$mod, U, exec, pkill -USR1 -f 'waybar --bar side_bar'"
         "$mod+Shift, M, exit"
         
         "$mod, Left, movefocus, l"
