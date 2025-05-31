@@ -68,7 +68,7 @@
 
           "bluetooth" = {
             adapter = "orpheus";
-	          format = " ";
+	          format = "";
 	          format-disabled = " ";
 	          format-connected = " {num_connections}";
 	          tooltip-format = "{controller_alias}\n{controller_address}";
