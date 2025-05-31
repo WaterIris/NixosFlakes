@@ -5,10 +5,10 @@
     settings = {
       global = {
         font = "JetBrainsMono Nerd Font";
-        corner_radius = 8;
-        origin = "top-center";
-        offset = "0x40";
-        frame_width = 2;
+        corner_radius = 16;
+        origin = "top-right";
+        offset = "0x0";
+        frame_width = 3;
         background = "#101319";
         foreground = "#e7ebf6";
       };

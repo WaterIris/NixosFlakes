@@ -2,24 +2,24 @@
 {
   programs.waybar = {
     enable = true;
-    style = ./iri.css;
+    style = ./style.css;
       settings = [
         {
+          name = "top_bar";
           layer = "top";
           position = "top";
-          fixed-center= true;
+          fixed-center = true;
           reload_style_on_change = true;
+          height = 34;
+          # modules-left = [ 
+            # "clock"
+            # "cpu"
+            # "memory"
+            # "disk"
+          # ];
 
-          modules-left = [ 
-            "clock"
-            "cpu"
-            "memory"
-            "disk"
-          ];
-
-          modules-center = [
-            "hyprland/workspaces"
-          ];
+          modules-left = ["hyprland/workspaces"];
+          modules-center = ["clock#time" "custom/separator" "clock#week" "custom/separator_dot" "clock#month" "custom/separator" "clock#calendar"];
 
           modules-right = [
             "network"
@@ -36,13 +36,9 @@
             # special-visible-only = true;
             all-outputs = true;
             format-icons = {
-              "1" = " ";
-              "2" = " ";
-              "3" = " ";
-              "4" = " ";
-              "5" = " ";
-              "6" = " ";
-              "9" = " ";
+              "active" = " ";
+              "default" = " ";
+              "empty" = " ";
             };
             persistent-workspaces = {
               "1" = "1";
@@ -54,12 +50,6 @@
               "eDP-1" = ["9"];
             };
           };  
-
-          "clock" = {
-            format = ''  {:L%H:%M}'';
-            tooltip = true;
-            tooltip-format = "<big>{:%A, %d.%B %Y }</big>\n<tt><small>{calendar}</small></tt>";
-          };
 
           "memory" = {
             interval = 5;
@@ -124,9 +114,37 @@
             ];
           };
 
+          "clock#time" = {
+            format = "{:%H:%M}";
+            locale = "pl_PL.UTF-8";
+            timezones = [ "Europe/Warsaw" ];
+          };
+
+          "custom/separator" = {
+            format = " | ";
+            tooltip = false;
+          };
+
+          "custom/separator_dot" = {
+            format = " • ";
+            tooltip = false;
+          };
+
+          "clock#week" = {
+            format = "{:%a}";
+          };
+
+          "clock#month" = {
+            format = "{:%h}";
+          };
+
+          "clock#calendar" = {
+            format = "{:%d-%m-%Y}";
+          };
+
           "custom/battery" = {
-            "exec" = "~/.config/notifs/battery.sh";
-            "interval" = 120;
+            exec = "~/.config/notifs/battery.sh";
+            interval = 120;
           };
         }
       ];
