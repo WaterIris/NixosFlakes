@@ -11,17 +11,12 @@
           fixed-center = true;
           reload_style_on_change = true;
           height = 34;
-          # modules-left = [ 
-            # "clock"
-            # "cpu"
-            # "memory"
-            # "disk"
-          # ];
 
           modules-left = ["hyprland/workspaces"];
           modules-center = ["clock#time" "custom/separator" "clock#week" "custom/separator_dot" "clock#month" "custom/separator" "clock#calendar"];
 
           modules-right = [
+            "bluetooth"
             "network"
             "pulseaudio"
             "temperature"
@@ -51,46 +46,45 @@
             };
           };  
 
-          "memory" = {
-            interval = 5;
-            format = "  {}%";
-            tooltip = true;
-          };
-
-          "cpu" = {
-            interval = 5;
-            format = "  {usage:2}%";
-            tooltip = true;
-          };
-
-          "disk" = {
-            format = "󰋊 {free}";
-            tooltip = true;
-          };
-
           "pulseaudio" = {
 		        tooltip = true;
 		        scroll-step = 2;
-		        format = "{icon}  {volume}%";
+		        format = "{icon}{volume}%";
 		        format-icons = {
-			        "default" = [""  ""  ""];
-              "headphone" = "";
+			        "default" = [" "  " "  " "];
+              "headphone" = "  ";
 	  	      };
+            on-click = "exec pavucontrol";
 	        };
 
           "network" = {
             format-wifi = "󰖩 {signalStrength}%";
-            format-ethernet = "{ipaddr}/{cidr} 󰈀 ";
-            # format-ethernet = " 󰈀 ";
+            format-ethernet = "󰈀 ";
             tooltip-format = "{ifname} via {gwaddr}";
+            tooltip-format-connected = "{ipaddr}/{cidr} 󰈀 ";
             format-disconnected = "󰖪 Disconnected ";
             format-alt = "{ifname}: {ipaddr}/{cidr}";
           };
 
+          "bluetooth" = {
+            adapter = "orpheus";
+	          format = " ";
+	          format-disabled = " ";
+	          format-connected = " {num_connections}";
+	          tooltip-format = "{controller_alias}\n{controller_address}";
+	          tooltip-format-connected = "{controller_alias}\n{controller_address}\n{device_enumerate}";
+	          tooltip-format-enumerate-connected = "{device_alias}\n{device_address}";
+            on-click = "exec blueman-manager";
+          };
+
           "temperature" = {
             critical-threshold = 80;
-            format = "{icon} {temperatureC}°C";
-            format-icons = ["" "" ""];
+            format = "{icon}{temperatureC}°C";
+            format-icons = [
+              " "
+              " "
+              " "
+            ];
           };
 
           "battery" = {
@@ -100,17 +94,16 @@
               "warning" = 40;
               "critical" = 20;
             };
-            format =  "{icon} {capacity}%";
-            format-charging =  "󰂄 {capacity}%";
-            format-plugged =  " {capacity}%";
-            format-alt = "{icon} {time}";
+            format = "{icon}{capacity}%";
+            format-charging = " {capacity}%";
+            format-plugged = " {capacity}%";
+            format-alt = "{icon}{time}";
             format-icons = [
-              "󰁻"
-              "󰁼"
-              "󰁾"
-              "󰂀"
-              "󰂂"
-              "󰁹"
+              " "
+              " "
+              " "
+              " "
+              " "
             ];
           };
 
@@ -141,7 +134,7 @@
           "clock#calendar" = {
             format = "{:%d-%m-%Y}";
           };
-
+          
           "custom/battery" = {
             exec = "~/.config/notifs/battery.sh";
             interval = 120;
