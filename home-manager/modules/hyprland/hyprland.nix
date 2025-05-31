@@ -139,7 +139,10 @@
         "col.active_border" = "rgb(101319)";
         "col.inactive_border" = "rgb(101319)";
         layout = "dwindle";
+        
       };
+      
+     
 
       dwindle = {
         pseudotile = true;
@@ -155,6 +158,13 @@
         rounding = 8;
         blur = {
           enabled = true;
+        };
+        shadow =  {
+          enabled = false;
+          # range = 15;
+          # render_power = 3;
+          # color = "rgb(56b8f7)";
+          # color_inactive = "rgb(101319)";
         };
       };
 
