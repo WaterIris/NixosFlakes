@@ -37,7 +37,17 @@
     };
   };
 
+  programs.zoxide = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
   programs.fzf = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
+  programs.eza = {
     enable = true;
     enableZshIntegration = true;
   };
@@ -50,9 +60,12 @@
 
     shellAliases = {
       vi = "nvim";     
-      ll = "ls -l";
-      ls = "ls --color";
+      cd = "z";
+      ls = "eza";
+      ll = "eza -alh";
+      tree = "eza --tree";
       tt = "~/.config/tmux/tmux_start.sh";
+
     };
     history = {
       size = 10000;

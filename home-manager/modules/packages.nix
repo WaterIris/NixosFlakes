@@ -10,7 +10,6 @@
     usbutils
     acpi
     # cli
-    zoxide
     neofetch
     nnn
     lazygit
