@@ -34,11 +34,9 @@
       set -g default-terminal "xterm-256color"
       set -ga terminal-overrides ",xterm-256color:Tc"
       
-      # DESIGN TWEAKS
-
       #  modes
-      setw -g clock-mode-colour yellow
-      setw -g mode-style "fg=black bg=red bold"
+      setw -g clock-mode-colour red
+      setw -g mode-style "fg=#1a2137 bg=#bcc6e3"
 
       # panes
       set -g pane-border-style "fg=#2e3859"
@@ -49,19 +47,17 @@
       set -g status-justify left
       set -g status-style "fg=red"
 
-      set -g status-left "#{?client_prefix,#[bg=#2e3859 fg=#fb80aa],#[bg=#2e3859 fg=#e7ebf6]}   #[bg=#101320 fg=#2e3859]"
+      set -g status-left "#{?client_prefix,#[bg=#1a2137 fg=#e5c890],#[bg=#1a2137 fg=#56b8f7]}  #[bg=#101320 fg=#1a2137]#[bg=#101319 fg=#101319] "
       set -g status-left-length 0
 
-
-      set -g status-right-style "fg=black bg=yellow"
-      set -g status-right "#[bg=#101319 fg=#2e3859]#[bg=#2e3859 fg=#e7ebf6] %d-%m-%Y #[bg=#2e3859 fg=#101319]"
-
       setw -g window-status-current-style "fg=black bg=red bold"
-      setw -g window-status-current-format '#[bg=#2e3859 fg=#101320]#[bg=#2e3859 fg=#e7ebf6] #I #W #[bg=#101319 fg=#2e3859]#[bg=#101319 fg=#2e3859]'
+      setw -g window-status-current-format '#[bg=#101320 fg=#1a2137]#[bg=#1a2137 fg=#fb80aa] #I #W #[bg=#101320 fg=#1a2137]'
 
       setw -g window-status-style "fg=red"
-      setw -g window-status-separator ""
-      setw -g window-status-format "#[bg=#101319 fg=#e7ebf6] #I #[fg=#e7ebf6]#W "
+      setw -g window-status-separator " "
+      setw -g window-status-format '#[bg=#101320 fg=#1a2137]#[bg=#1a2137 fg=#bcc6e3] #I #W #[bg=#101320 fg=#1a2137]'
+
+      set -g status-right "#[bg=#101320 fg=#1a2137]#[bg=#1a2137 fg=#b77ed1] #H #[bg=#101320 fg=#1a2137]"
 
       setw -g window-status-bell-style "fg=yellow bg=red bold"
 
@@ -71,6 +67,9 @@
     plugins = with pkgs; [
       {
         plugin = tmuxPlugins.sensible;
+      }
+      {
+        plugin = tmuxPlugins.resurrect; 
       }
     ];
   };
