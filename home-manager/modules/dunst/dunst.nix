@@ -32,4 +32,9 @@
       };  
     };
   };
+
+  home.file.".config/notifs" = {
+    source = ./battery_notif;
+    recursive = true;
+  };
 }

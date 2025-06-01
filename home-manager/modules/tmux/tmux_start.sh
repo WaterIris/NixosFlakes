@@ -4,9 +4,11 @@ export DISPLAY=:0
 export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
 
 if tmux ls | grep -q "iris_session"; then
+  clear
   dunstify "Tmux ession running in background" "Attaching" -r 1312
   tmux attach
 else
+  clear
   dunstify "No tmux session running" "Starting new instance" -r 1312
   tmux new-session -d -s iris_session -n nix
   tmux send-keys -t iris_ses "cd ~/.config/NixosFlakes" C-m

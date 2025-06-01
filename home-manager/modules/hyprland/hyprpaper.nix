@@ -4,11 +4,11 @@
     enable = true;
     settings = {
       preload = [
-        "~/.config/backgrounds/Wild-Clouds.png"
+        "~/.config/backgrounds/Lofi-Urban-Nightscape.png"
       ];
 
       wallpaper = [
-        ",~/.config/backgrounds/Wild-Clouds.png"
+        ",~/.config/backgrounds/Lofi-Urban-Nightscape.png"
        ];
     };
 

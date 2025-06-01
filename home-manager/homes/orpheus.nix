@@ -15,7 +15,7 @@
     ../modules/git.nix
     ../modules/direnv.nix
     ../modules/bg/bg.nix
-    ../modules/dunst.nix
+    ../modules/dunst/dunst.nix
     ../modules/bash.nix
     ../modules/tmux/tmux.nix
   ];
