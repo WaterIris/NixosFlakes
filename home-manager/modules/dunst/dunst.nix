@@ -8,6 +8,7 @@
         corner_radius = 16;
         origin = "top-right";
         offset = "0x0";
+        monitor = -1;
         frame_width = 3;
         background = "#101319";
         foreground = "#e7ebf6";
