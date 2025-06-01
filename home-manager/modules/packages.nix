@@ -1,6 +1,7 @@
 {pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
+    wezterm
     # system basics
     zip
     unzip

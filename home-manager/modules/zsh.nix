@@ -57,6 +57,9 @@
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
+    initExtra = ''
+      bindkey -e
+    '';
 
     shellAliases = {
       vi = "nvim";     
