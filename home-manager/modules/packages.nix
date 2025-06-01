@@ -1,7 +1,6 @@
 {pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
-    wezterm
     # system basics
     zip
     unzip
@@ -11,6 +10,8 @@
     usbutils
     acpi
     # cli
+    wl-clipboard
+    pass
     neofetch
     nnn
     lazygit
@@ -22,7 +23,7 @@
     inputs.nixvim.packages.${system}.default
     dua
     # apps
-    chromium
+    # chromium
     qbittorrent
     blueman
     nautilus

@@ -11,6 +11,7 @@
       ../modules/nvidia-drivers.nix
       ../modules/fonts.nix
       ../modules/pulse-audio.nix
+      ../modules/gpg.nix
     ];
 
   # Bootloader.

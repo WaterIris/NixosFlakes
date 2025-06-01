@@ -7,6 +7,7 @@
       "include" = "colors.conf"; 
       # Fonts
       font_family = "JetBrainsMono Nerd Font";
+      # font_family = "CaskaydiaCove Nerd Font";
       italic_font = "auto";
       bold_font = "auto";
       bold_italic_font = "auto";
