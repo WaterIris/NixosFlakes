@@ -1,2 +1,2 @@
 ./hosts/orpheus/hardware-configuration.nix
-./hosts/modules/hbg.nix
+./hosts/modules/hbg.txt
