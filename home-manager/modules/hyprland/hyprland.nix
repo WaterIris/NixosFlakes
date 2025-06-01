@@ -85,12 +85,11 @@
 
       bind = [
         "$mod, Return, exec, $terminal"
-        "$mod, C, killactive,"
-        "$mod, E, exec, $browser"
+        "$mod, B, exec, $browser"
         "$mod, S, exec, $screen_shot"
-        "$mod, R, exec, $run"
-        "$mod, P, exec, $off"
-        "$mod, U, exec, pkill -USR1 -f 'waybar --bar side_bar'"
+        "$mod, D, exec, $run"
+        "$mod+Shift, C, killactive"
+        "$mod+Shift, P, exec, $off"
         "$mod+Shift, M, exit"
         
         "$mod, Left, movefocus, l"
@@ -99,9 +98,9 @@
         "$mod, Down, movefocus, d"
         
         "Alt, Tab, cyclenext,"
-        "$mod, N, layoutmsg, swapsplit"
-        "$mod, B, layoutmsg, togglesplit"
-        "$mod, V, togglefloating,"
+        "$mod, U, layoutmsg, swapsplit"
+        "$mod, I, layoutmsg, togglesplit"
+        "$mod, O, togglefloating,"
 
 	      "$mod, 1, workspace, 1"
 	      "$mod, 2, workspace, 2"
