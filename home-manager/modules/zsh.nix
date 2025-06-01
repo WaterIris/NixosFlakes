@@ -64,7 +64,7 @@
       ls = "eza";
       ll = "eza -alh";
       tree = "eza --tree";
-      tt = "tmux attach";
+      tt = "~/.config/tmux/script.sh";
 
     };
     history = {

@@ -68,9 +68,10 @@
       {
         plugin = tmuxPlugins.sensible;
       }
-      {
-        plugin = tmuxPlugins.resurrect; 
-      }
     ];
+  };
+
+  home.file.".config/tmux/script.sh" = {
+    source = ./tmux_start.sh;
   };
 }
