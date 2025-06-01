@@ -1,13 +1,10 @@
-[colors.primary]
 background = '#101319'
 foreground = '#e7ebf6'
 currentline = '#171b24'
-
-[colors.cursor]
 text = '#1a2137'
 cursor = '#bcc6e3'
 
-[colors.normal]
+[colors.strong]
 black = '#2e3859'
 red = '#fb80aa'
 green = '#83C092'
@@ -15,9 +12,9 @@ yellow = '#e5c890'
 blue = '#56b8f7'
 magenta = '#b77ed1'
 cyan = '#52a9a9'
-white = '#bcc6e3'
+white = '#f5f6fb'
 
-[colors.bright]
+[colors.weak]
 black = '#586899'
 red = '#fda7c1'
 green = '#a6da95'
@@ -25,4 +22,4 @@ yellow = '#eed49f'
 blue = '#89cdfc'
 magenta = '#ceb5fd'
 cyan = '#63c0bf'
-white = '#f5f6fb'
+white = '#bcc6e3'
