@@ -59,8 +59,8 @@
         # "opacity 1.00,focus:1,class:firefox"
         # "opacity 0.80,focus:0,class:firefox"
           
-        # "opacity 0.90,focus:1,class:kitty"
-        # "opacity 0.80,focus:0,class:kitty"
+        "opacity 0.90,focus:1,class:kitty"
+        "opacity 0.90,focus:0,class:kitty"
       ];
 
       exec-once = [ 
@@ -140,8 +140,6 @@
         layout = "dwindle";
         
       };
-      
-     
 
       dwindle = {
         pseudotile = true;
