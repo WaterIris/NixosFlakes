@@ -15,7 +15,7 @@ window {
   width: 20%;
   border-radius: 24px;
   margin: 8px;
-  background-color: rgba(30, 30, 46, 0.9);
+  background-color: rgba(16, 19, 25, 0.9);
 }
 
 mainbox {
@@ -23,8 +23,8 @@ mainbox {
 }
 
 inputbar {
-  background-color: rgba(30, 30, 46, 0.9);
-  border-color: rgba(137, 180, 250, 0.9);
+  background-color: rgba(16, 19, 25, 0.9);
+  border-color: rgba(26, 33, 55, 0.9);
   border: 2px;
   border-radius: 16px;
   padding: 8px 16px;
@@ -33,19 +33,20 @@ inputbar {
 }
 
 prompt {
-  text-color: rgba(188, 198, 227, 1);
+  text-color: rgba(205, 214, 244, 0.9);
+
 }
 
 entry {
   placeholder:  "Search";
-  placeholder-color:  rgba(49, 50, 69, 0.9);
+  placeholder-color:  rgba(205, 214, 244, 0.9);
 }
 
 message {
   margin: 12px 0 0;
   border-radius: 16px;
-  border-color: rgba(243, 139, 168, 0.9);
-  background-color: rgba(243, 139, 168, 0.9);
+  border-color: rgba(86, 184, 247, 0.9);
+  background-color: rgba(86, 184, 247, 0.9);
 }
 
 textbox {
