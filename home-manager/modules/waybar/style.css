@@ -67,7 +67,7 @@ window.top_bar .modules-center {
 
 #workspaces button {
   /*color: #2e3859;*/
-  color: rgba(46, 56, 89, 0.1);
+  color: rgba(46, 56, 89, 0.9);
   margin-left: 8px;
   margin-right: 8px;
 }
