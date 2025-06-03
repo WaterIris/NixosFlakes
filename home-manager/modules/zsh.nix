@@ -10,8 +10,8 @@
         truncate_to_repo = false;
       };
       character = {
-        success_symbol = "[](#89b4fa)";
-        error_symbol = "[](#f38ba8)";
+        success_symbol = "[](#56b8f7)";
+        error_symbol = "[](#fb80aa)";
       };
 
       git_branch = {

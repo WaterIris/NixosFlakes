@@ -9,14 +9,10 @@
 
   gtk = {
     enable = true;
+    
     theme = {
-      name = "catppuccin-mocha-blue-compact+rimless,black";
-      package = pkgs.catppuccin-gtk.override {
-        accents = [ "blue" ];
-        size = "compact";
-        tweaks = [ "rimless" "black" ];
-        variant = "mocha";
-      };
+      package = pkgs.flat-remix-gtk;
+      name = "Flat-Remix-GTK-Grey-Darkest";
     };
 
     iconTheme = {
@@ -141,8 +137,8 @@
         gaps_in = "8px";
         gaps_out = "16px";
         border_size = 2;
-        "col.active_border" = "rgb(313245)";
-        "col.inactive_border" = "rgb(313245)";
+        "col.active_border" = "rgb(1a2137)";
+        "col.inactive_border" = "rgb(1a2137)";
         layout = "dwindle";
         
       };

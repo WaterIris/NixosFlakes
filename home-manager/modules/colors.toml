@@ -1,6 +1,8 @@
 background = '#101319'
-foreground = '#e7ebf6'
+foreground = '#cdd6f4'
+
 currentline = '#171b24'
+
 text = '#1a2137'
 cursor = '#bcc6e3'
 
@@ -10,16 +12,7 @@ red = '#fb80aa'
 green = '#83C092'
 yellow = '#e5c890'
 blue = '#56b8f7'
-magenta = '#b77ed1'
+violet = '#b77ed1'
 cyan = '#52a9a9'
-white = '#f5f6fb'
+white = '#bac2de'
 
-[colors.weak]
-black = '#586899'
-red = '#fda7c1'
-green = '#a6da95'
-yellow = '#eed49f'
-blue = '#89cdfc'
-magenta = '#ceb5fd'
-cyan = '#63c0bf'
-white = '#bcc6e3'
