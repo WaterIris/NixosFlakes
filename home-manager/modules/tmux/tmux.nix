@@ -33,7 +33,7 @@
       
       #  modes
       setw -g clock-mode-colour red
-      setw -g mode-style "fg=#1e1e2e bg=#bcc6e3"
+      # setw -g mode-style "fg=#1e1e2e bg=#f9e2af"
 
       # panes
       set -g pane-border-style "fg=#313245"
