@@ -4,14 +4,14 @@
     enable = true;
     shellIntegration.enableZshIntegration = true;
     settings = {
-      "include" = "colors.conf"; 
+      include = "colors.conf"; 
       # Fonts
       font_family = "JetBrainsMono Nerd Font";
       # font_family = "CaskaydiaCove Nerd Font";
       italic_font = "auto";
       bold_font = "auto";
       bold_italic_font = "auto";
-      font_size = "10.0";
+      font_size = "12.0";
 
       background_blur = 0; 
       adjust_line_height = 3;
