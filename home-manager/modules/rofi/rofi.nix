@@ -14,6 +14,6 @@
   };
   
   home.file.".config/rofi/conf.rasi" = {
-    source = ./iris.rasi;
+    source = ./style.rasi;
   };
 }
