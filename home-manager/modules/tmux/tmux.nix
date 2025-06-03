@@ -42,9 +42,8 @@
       # statusbar
       set -g status-position bottom
       set -g status-justify left
-      set -g status-style "fg=#cba6f7"
+      set -g status-style "fg=#313245"
 
-      # set -g status-left "#{?client_prefix,#[bg=#313245 fg=#A6E3A2],#[bg=#313245 fg=#89B4FB]}█#{?client_prefix,#[bg=#A6E3A2 fg=#313245],#[bg=#89B4FB fg=#313245]}█ #{?client_prefix,#[bg=#313245 fg=#A6E3A2],#[bg=#313245 fg=#89B4FB]}"
       set -g status-left "#{?client_prefix,#[bg=#A6E3A2 fg=#313245],#[bg=#89B4FB fg=#313245]}  #{?client_prefix,#[bg=#313245 fg=#A6E3A2],#[bg=#313245 fg=#89B4FB]}"
       set -g status-left-length 0
 

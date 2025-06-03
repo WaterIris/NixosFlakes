@@ -24,6 +24,7 @@
     dua
     # apps
     # chromium
+    hyprpicker
     qbittorrent
     blueman
     nautilus

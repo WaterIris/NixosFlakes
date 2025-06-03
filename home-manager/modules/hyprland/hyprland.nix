@@ -10,8 +10,13 @@
   gtk = {
     enable = true;
     theme = {
-      package = pkgs.flat-remix-gtk;
-      name = "Flat-Remix-GTK-Grey-Darkest";
+      name = "catppuccin-mocha-blue-compact+rimless,black";
+      package = pkgs.catppuccin-gtk.override {
+        accents = [ "blue" ];
+        size = "compact";
+        tweaks = [ "rimless" "black" ];
+        variant = "mocha";
+      };
     };
 
     iconTheme = {
@@ -88,6 +93,7 @@
         "$mod, B, exec, $browser"
         "$mod, S, exec, $screen_shot"
         "$mod, D, exec, $run"
+        "$mod, C, exec, hyprpicker -a"
         "$mod+Shift, C, killactive"
         "$mod+Shift, P, exec, $off"
         "$mod+Shift, M, exit"
@@ -149,6 +155,8 @@
       device = {
         name = "logitech-g-pro--1"; 
         sensitivity = -0.5;
+        natural_scroll = true;
+
       };
       
       decoration = {

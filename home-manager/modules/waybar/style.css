@@ -9,16 +9,16 @@
 window.top_bar {
   all:unset;
   padding:0px;
-  /*background: #101319;*/
-  background: rgba(16, 19, 25, 0.9);
+  /*background: #1e1e2e;*/
+  background: rgba(30, 30, 46, 0.9);
 }
 
 window.top_bar .modules-center {
   font-weight: bold;
-  /*background-color: #1a2137;*/
-  background-color: rgba(26, 33, 55, 0.9);
-  /*color: #1a2137;*/
-  color: rgba(26, 33, 55, 0.9);
+  /*background-color: #313245;*/
+  background-color: rgba(49, 50, 69, 0.9);
+  /*color: #313245;*/
+  color: rgba(49, 50, 69, 1);
   border-radius: 16px;
   padding-left: 20px;
   padding-right: 20px;
@@ -27,35 +27,34 @@ window.top_bar .modules-center {
 }
 
 #custom-separator {
-  /*color: #83C092;*/
-  color: rgba(131, 192, 146, 0.9);
+  /*color: #a6e3a1;*/
+  color: rgba(166, 227, 161, 0.9);
 }
 
 #custom-separator_dot {
-  /*color: #83C092;*/
-  color: rgba(131, 192, 146, 0.9);
+  /*color: #a6e3a1;*/
+  color: rgba(166, 227, 161, 0.9);
 }
 
 #clock.time {
-  /*color: #fb80aa;*/
-  color: rgba(251, 128, 170, 0.9);
+  /*color: #f38ba8;*/
+  color: rgba(243, 139, 168, 0.9);
 }
 
 #clock.week {
-  /*color: #b77ed1;*/
-  color: rgba(183, 126, 209, 0.9);
+  /*color: #cba6f7;*/
+  color: rgba(203, 166, 247, 0.9);
 }
 
 #clock.month {
-  /*color: #b77ed1;*/
-  color: rgba(183, 126, 209, 0.9);
+  /*color: #cba6f7;*/
+  color: rgba(203, 166, 247, 0.9);
 }
 
 #clock.calendar {
-  /*color: #56b8f7;*/
-  color: rgba(86, 184, 247, 0.9);
+  /*color: #89b4fa;*/
+  color: rgba(137, 180, 250, 0.9);
 }
-
 
 #workspaces {
   font-weight: bold;
@@ -66,62 +65,60 @@ window.top_bar .modules-center {
 }
 
 #workspaces button {
-  /*color: #2e3859;*/
-  color: rgba(46, 56, 89, 0.1);
+  /*color: #313245;*/
+  color: rgba(49, 50, 69, 0.9);
   margin-left: 8px;
   margin-right: 8px;
 }
 
 #workspaces button.empty {
-  /*color: #1a2137;*/
-  color: rgba(26, 33, 55, 0.9);
+  /*color: #313245;*/
+  color: rgba(49, 50, 69, 0.9);
 }
 
 #workspaces button.active {
-  /*color: #fb80aa;*/
-  color: rgba(251, 128, 170, 0.9);
+  /*color: #f38ba8;*/
+  color: rgba(243, 139, 168, 0.9);
 }
 
-
 #bluetooth {
-  /*color: #52a9a9;*/
-  color: rgba(82, 169, 169, 0.9);
+  /*color: #94e2d5;*/
+  color: rgba(148, 226, 213, 0.9);
   margin-left: 8px;
   margin-right: 8px;
 }
 
-
 #network {
-  /*color: #b77ed1;*/
-  color: rgba(183, 126, 209, 0.9);
+  /*color: #cba6f7;*/
+  color: rgba(203, 166, 247, 0.9);;
   margin-left: 8px;
   margin-right: 8px;
 }
 
 #pulseaudio {
-  /*color: #56b8f7;*/
-  color: rgba(86, 184, 247, 0.9);
+  /*color: #89b4fa;*/
+  color: rgba(137, 180, 250, 0.9);
   margin-left: 8px;
   margin-right: 8px;
 }
 
 #temperature {
-  /*color: #e5c890; */
-  color: rgba(229, 200, 144, 0.9);
+  /*color: #f9e2af; */
+  color: rgba(249, 226, 175, 0.9);
   margin-left: 8px;
   margin-right: 8px;
 }
 
 #battery {
-  /*color: #83C092;*/
-  color: rgba(131, 192, 146, 0.9);
+  /*color: #a6e3a1;*/
+  color: rgba(166, 227, 161, 0.9);
   margin-left: 8px;
   margin-right: 16px;
 }
 
 #battery.critical {
-  /*color: #fb80aa;*/
-  color: rgba(251, 128, 170, 0.9);
+  /*color: #f38ba8;*/
+  color: rgba(243, 139, 168, 0.9);
 }
 
 
