@@ -11,28 +11,28 @@
         offset = "16x16";
         monitor = -1;
         frame_width = 2;
-        background = "#313244E6";
-        foreground = "#cba6f7E6";
+        background = "#101319E6";
+        foreground = "#cdd6f4E6";
       };
 
       urgency_low = {
-        background = "#313244E6";
-        highlight = "#f9e2afE6";
-        frame_color = "#f9e2afE6";
+        background = "#101319E6";
+        highlight = "#83C092E6";
+        frame_color = "#83C092E6";
         timeout = 3;
       };
 
       urgency_normal = {
-        background = "#313244E6";
-        highlight = "#89b4faE6";
-        frame_color = "#89b4faE6";
+        background = "#101319E6";
+        highlight = "#e5c890E6";
+        frame_color = "#e5c890E6";
         timeout = 4;
       };
 
       urgency_critical = {
-        background = "#313244E6";
-        highlight = "#f38ba8E6";
-        frame_color = "#f38ba8E6";
+        background = "#101319E6";
+        highlight = "#fb80aaE6";
+        frame_color = "#fb80aaE6";
         timeout = 10;
       };  
     };

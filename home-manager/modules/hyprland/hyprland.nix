@@ -134,11 +134,11 @@
       ];
 
       general = {
-        gaps_in = "8px";
-        gaps_out = "16px";
+        gaps_in = "0px";
+        gaps_out = "0px";
         border_size = 2;
-        "col.active_border" = "rgb(1a2137)";
-        "col.inactive_border" = "rgb(1a2137)";
+        "col.active_border" = "rgb(89b4fa)";
+        "col.inactive_border" = "rgb(313244)";
         layout = "dwindle";
         
       };
@@ -156,7 +156,7 @@
       };
       
       decoration = {
-        rounding = 8;
+        rounding = 0;
         blur = {
           enabled = true;
         };
