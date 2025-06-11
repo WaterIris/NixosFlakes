@@ -1,6 +1,7 @@
 {pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
+    chromium
     # system basics
     zip
     unzip
