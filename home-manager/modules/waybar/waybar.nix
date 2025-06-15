@@ -10,8 +10,6 @@
           position = "top";
           fixed-center = true;
           reload_style_on_change = true;
-          height = 34;
-
           modules-left = ["hyprland/workspaces"];
           modules-center = ["clock#time" "custom/separator" "clock#week" "custom/separator_dot" "clock#month" "custom/separator" "clock#calendar"];
 
@@ -51,25 +49,25 @@
 		        scroll-step = 2;
 		        format = "{icon}{volume}%";
 		        format-icons = {
-			        "default" = [" "  " "  " "];
+			        "default" = ["  "  "  "  "  "];
               "headphone" = "  ";
 	  	      };
             on-click = "exec pavucontrol";
 	        };
 
           "network" = {
-            format-wifi = "󰖩 {signalStrength}%";
+            format-wifi = "󰖩  {signalStrength}%";
             format-ethernet = "󰈀 ";
             tooltip-format = "{ifname} via {gwaddr}";
             tooltip-format-connected = "{ipaddr}/{cidr} 󰈀 ";
-            format-disconnected = "󰖪 Disconnected ";
+            format-disconnected = "󰖪  Disconnected ";
             format-alt = "{ifname}: {ipaddr}/{cidr}";
           };
 
           "bluetooth" = {
             adapter = "orpheus";
-	          format = "";
-	          format-disabled = " ";
+	          format = " on";
+	          format-disabled = " off";
 	          format-connected = " {num_connections}";
 	          tooltip-format = "{controller_alias}\n{controller_address}";
 	          tooltip-format-connected = "{controller_alias}\n{controller_address}\n{device_enumerate}";
@@ -79,11 +77,11 @@
 
           "temperature" = {
             critical-threshold = 80;
-            format = "{icon}{temperatureC}°C";
+            format = "{icon} {temperatureC}°C";
             format-icons = [
-              " "
-              " "
-              " "
+              ""
+              ""
+              ""
             ];
           };
 
@@ -94,10 +92,10 @@
               "warning" = 40;
               "critical" = 20;
             };
-            format = "{icon}{capacity}%";
-            format-charging = " {capacity}%";
-            format-plugged = " {capacity}%";
-            format-alt = "{icon}{time}";
+            format = "{icon} {capacity}%";
+            format-charging = "  {capacity}%";
+            format-plugged = "  {capacity}%";
+            format-alt = "{icon} {time}";
             format-icons = [
               " "
               " "

@@ -62,6 +62,10 @@
           
         "opacity 0.90,focus:1,class:kitty"
         "opacity 0.90,focus:0,class:kitty"
+
+        "opacity 0.90,focus:1,class:obsidian"
+        "opacity 0.90,focus:0,class:obsidian"
+
       ];
 
       exec-once = [ 
@@ -134,10 +138,10 @@
       ];
 
       general = {
-        gaps_in = "0px";
-        gaps_out = "0px";
+        gaps_in = "2px";
+        gaps_out = "4px";
         border_size = 2;
-        "col.active_border" = "rgb(89b4fa)";
+        "col.active_border" = "rgb(313244)";
         "col.inactive_border" = "rgb(313244)";
         layout = "dwindle";
         
@@ -160,12 +164,13 @@
         blur = {
           enabled = true;
         };
-        shadow =  {
-          enabled = false;
-          # range = 15;
-          # render_power = 3;
-          # color = "rgb(56b8f7)";
-          # color_inactive = "rgb(101319)";
+        shadow ={
+          enabled = true;
+          range = 15;
+          render_power = 3;
+          offset = "0, 0";
+          color = "rgb(313244)";
+          color_inactive = "rgb(313244)";
         };
       };
 
