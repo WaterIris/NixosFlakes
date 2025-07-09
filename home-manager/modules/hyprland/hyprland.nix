@@ -60,12 +60,11 @@
         # "opacity 1.00,focus:1,class:firefox"
         # "opacity 0.80,focus:0,class:firefox"
           
-        "opacity 0.90,focus:1,class:kitty"
-        "opacity 0.90,focus:0,class:kitty"
+        # "opacity 0.90,focus:1,class:kitty"
+        # "opacity 0.90,focus:0,class:kitty"
 
-        "opacity 0.90,focus:1,class:obsidian"
-        "opacity 0.90,focus:0,class:obsidian"
-
+        # "opacity 0.90,focus:1,class:obsidian"
+        # "opacity 0.90,focus:0,class:obsidian"
       ];
 
       exec-once = [ 
@@ -138,9 +137,9 @@
       ];
 
       general = {
-        gaps_in = "2px";
-        gaps_out = "4px";
-        border_size = 2;
+        gaps_in = "0px";
+        gaps_out = "20px";
+        border_size = 0;
         "col.active_border" = "rgb(313244)";
         "col.inactive_border" = "rgb(313244)";
         layout = "dwindle";
@@ -164,14 +163,14 @@
         blur = {
           enabled = true;
         };
-        shadow ={
-          enabled = true;
-          range = 15;
-          render_power = 3;
-          offset = "0, 0";
-          color = "rgb(313244)";
-          color_inactive = "rgb(313244)";
-        };
+        # shadow ={
+          # enabled = true;
+          # range = 15;
+          # render_power = 3;
+          # offset = "0, 0";
+          # color = "rgb(313244)";
+          # color_inactive = "rgb(313244)";
+        # };
       };
 
       bezier = [
@@ -187,10 +186,10 @@
       ];
 
       monitor = [
-        "eDP-1, 1920x1080@144, 0x0, 1"
-        # "HDMI-A-1, 2560x1440x@144, 0x0,1"
-        # "eDP-1, 1920x1080@144, 2560x0, 1"
-        "HDMI-A-1, 2560x1440x@144, 1920x0,1"
+        # "eDP-1, 1920x1080@144, 0x0, 1"
+        "HDMI-A-1, 2560x1440x@144, 0x0,1"
+        "eDP-1, 1920x1080@144, 2560x0, 1"
+        # "HDMI-A-1, 2560x1440x@144, 1920x0,1"
       ];
 
       bindel = [

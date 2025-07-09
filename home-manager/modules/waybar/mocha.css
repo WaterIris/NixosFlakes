@@ -1,0 +1,116 @@
+* {
+  all:unset;
+  font-size: 16px;
+  font-family: "Agave Nerd Font";
+  font-weight: bold;
+  opacity: 1.0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+window.top_bar {
+  all:unset;
+  padding:0px;
+  background: rgba(30,30,46,0.9);
+  /*background: rgba(16, 19, 25, 0.9);*/
+}
+
+window.top_bar .modules-center {
+  font-weight: bold;
+  /*background-color: rgba(49,50,68,0.9);*/
+  /*background-color: rgba(26, 33, 55, 0.9);*/
+  /*color: rgba(49,50,68,0.9);*/
+  /*color: rgba(26, 33, 55, 0.9);*/
+  border-radius: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#custom-separator {
+  color: rgba(166,227,161,0.9);
+}
+
+#custom-separator_dot {
+  color: rgba(166,227,161,0.9);
+}
+
+#clock.time {
+  color: rgba(243,139,168,0.9);
+}
+
+#clock.week {
+  color: rgba(203,166,247,0.9);
+}
+
+#clock.month {
+  color: rgba(203,166,247,0.9);
+}
+
+#clock.calendar {
+  color: rgba(137,180,250,0.9);
+}
+
+
+#workspaces {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 8px;
+  margin-right: 4px;
+}
+
+#workspaces button {
+  color: rgba(69,71,90,0.9);
+  /*color: rgba(46, 56, 89, 0.9);*/
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+#workspaces button.empty {
+  color: rgba(69,71,90,0.9);
+}
+
+#workspaces button.active {
+  color: rgba(243,139,168,0.9);
+}
+
+
+#bluetooth {
+  color: rgba(137,220,235,0.9);
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+
+#network {
+  color: rgba(203,166,247,0.9);
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+#pulseaudio {
+  color: rgba(137,180,250,0.9);
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+#temperature {
+  color: rgba(229,200,144,0.9); 
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+#battery {
+  color: rgba(166,227,161,0.9);
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+#battery.critical {
+  color: rgba(243,139,168,0.9);
+}
+

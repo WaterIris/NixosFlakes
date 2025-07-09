@@ -6,11 +6,11 @@
     settings = {
       include = "colors.conf"; 
       # Fonts
-      font_family = "Iosevka Nerd Font";
+      font_family = "Agave Nerd Font";
       italic_font = "auto";
       bold_font = "auto";
       bold_italic_font = "auto";
-      font_size = "12.0";
+      font_size = "13.0";
 
       background_blur = 0; 
       adjust_line_height = 3;
@@ -82,7 +82,7 @@
   };
 
   home.file.".config/kitty/colors.conf" = {
-    source = ./mocha.conf;
+    source = ./style.conf;
   };
 
 }

@@ -6,6 +6,7 @@
       # pkgs.nerd-fonts.iosevka-term
       pkgs.nerd-fonts.iosevka
       pkgs.nerd-fonts.ubuntu-mono
+      pkgs.nerd-fonts.agave
     ];
   }; 
 }
