@@ -38,7 +38,8 @@
 
       "$terminal" = "kitty";
       "$browser" = "firefox";
-      "$run" = "rofi -show drun";
+      # "$run" = "rofi -show drun";
+      "$run" = "wofi --show drun";
       "$off" = "rofi -show power-menu -no-show-icons";
       "$mod" = "SUPER";
       "$screen_shot" = "hyprshot -m region --clipboard-only";
@@ -60,8 +61,8 @@
         # "opacity 1.00,focus:1,class:firefox"
         # "opacity 0.80,focus:0,class:firefox"
           
-        # "opacity 0.90,focus:1,class:kitty"
-        # "opacity 0.90,focus:0,class:kitty"
+        "opacity 0.95,focus:1,class:kitty"
+        "opacity 0.95,focus:0,class:kitty"
 
         # "opacity 0.90,focus:1,class:obsidian"
         # "opacity 0.90,focus:0,class:obsidian"

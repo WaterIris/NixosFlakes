@@ -11,6 +11,7 @@
           fixed-center = true;
           reload_style_on_change = true;
           modules-left = ["hyprland/workspaces"];
+          # modules-center = ["clock#time" "custom/separator" "clock#week" "custom/separator_dot" "clock#month" "custom/separator" "clock#calendar"];
           modules-center = ["clock#time" "custom/separator" "clock#week" "custom/separator_dot" "clock#month" "custom/separator" "clock#calendar"];
 
           modules-right = [
@@ -112,12 +113,12 @@
           };
 
           "custom/separator" = {
-            format = " | ";
+            format = "  ";
             tooltip = false;
           };
 
           "custom/separator_dot" = {
-            format = " • ";
+            format = " ";
             tooltip = false;
           };
 

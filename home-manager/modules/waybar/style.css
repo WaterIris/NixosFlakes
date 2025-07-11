@@ -9,15 +9,16 @@
 window.top_bar {
   all:unset;
   padding:0px;
-  background: #101319;
+  /*background: #101319;*/
   /*background: rgba(16, 19, 25, 0.9);*/
+  background: transparent;
 }
 
 window.top_bar .modules-center {
   font-weight: bold;
-  background-color: #1a2137;
+  /*background-color: #1a2137;*/
   /*background-color: rgba(26, 33, 55, 0.9);*/
-  color: #1a2137;
+  /*color: #1a2137;*/
   /*color: rgba(26, 33, 55, 0.9);*/
   border-radius: 16px;
   padding-left: 20px;

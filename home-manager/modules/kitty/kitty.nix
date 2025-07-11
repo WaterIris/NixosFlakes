@@ -6,11 +6,12 @@
     settings = {
       include = "colors.conf"; 
       # Fonts
-      font_family = "Agave Nerd Font";
+      # font_family = "Agave Nerd Font";
+      font_family = "JetBrainsMono Nerd Font";
       italic_font = "auto";
       bold_font = "auto";
       bold_italic_font = "auto";
-      font_size = "13.0";
+      font_size = "12.0";
 
       background_blur = 0; 
       adjust_line_height = 3;
@@ -18,7 +19,7 @@
 
       force_ltr = "yes";
       disable_ligatures = "always";
-      box_drawing_scale = "0.001, 1, 1.5, 2";
+      box_drawing_scale = "0.001, 0.001, 0.001, 0.001";
       # Cursor
       cursor_shape = "beam";
       cursor_blink_interval = 0;
@@ -45,7 +46,7 @@
       window_border_width = 0;
       draw_minimal_borders = "yes";
       single_window_margin_width = -1;
-      window_margin_width = 5;
+      window_margin_width = 2.0;
       # Can set 4 values for top, right, bottom and left.
       window_padding_width = 0;
       inactive_text_alpha = 1.0;
@@ -56,7 +57,7 @@
       confirm_os_window_close = "0";
       # Tabs
       tab_bar_edge = "bottom";
-      tab_bar_margin_width = 4.0;
+      tab_bar_margin_width = 0.0;
       tab_bar_min_tabs = 2;
       tab_switch_strategy = "previous";
       tab_bar_style = "fade";

@@ -4,11 +4,11 @@
     enable = true;
     settings = {
       preload = [
-        "~/.config/backgrounds/mountains.png"
+        "~/.config/backgrounds/Wild-Clouds.png"
       ];
 
       wallpaper = [
-        ",~/.config/backgrounds/mountains.png"
+        ",~/.config/backgrounds/Wild-Clouds.png"
        ];
     };
 

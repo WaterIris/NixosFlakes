@@ -18,6 +18,7 @@
     ../modules/dunst/dunst.nix
     ../modules/bash.nix
     ../modules/tmux/tmux.nix
+    ../modules/wofi/wofi.nix
   ];
 
   programs.home-manager.enable = true;

@@ -17,7 +17,6 @@
       unbind C-b
       set-option -g prefix C-a
       bind-key C-a send-prefix
-      
 
       # split panes using | and -
       bind | split-window -h -c "#{pane_current_path}"
@@ -40,20 +39,20 @@
       set -g pane-active-border-style "fg=#1a2137"
 
       # statusbar
-      set -g status-position top
+      set -g status-position bottom
       set -g status-justify left
       set -g status-style "fg=#83C092"
 
-      set -g status-left "#{?client_prefix,#[bg=#e5c890 fg=#1a2137],#[bg=#56b8f7 fg=#1a2137]}  #{?client_prefix,#[bg=#1a2137 fg=#e5c890],#[bg=#1a2137 fg=#56b8f7]}"
+      set -g status-left "#{?client_prefix,#[bg=#e5c890 fg=#1a2137],#[bg=#56b8f7 fg=#1a2137]}  #{?client_prefix,#[bg=#1a2137 fg=#e5c890],#[bg=#1a2137 fg=#56b8f7]}█"
       set -g status-left-length 0
 
       setw -g window-status-current-style "fg=black bg=red bold"
-      setw -g window-status-current-format '#[bg=#101319 fg=#1a2137]#{?#{==:#I,1},█,}#[bg=#1a2137 fg=#f38ba8] #I #W #[bg=#101319 fg=#1a2137]'
+      setw -g window-status-current-format '#[bg=#101319 fg=#101319]#{?#{==:#I,1},█,█}#[bg=#1a2137 fg=#f38ba8] #I #W '
 
-      setw -g window-status-separator " | "
-      setw -g window-status-format '#[bg=#101319 fg=#1a2137]#{?#{==:#I,1},█,}#[bg=#1a2137 fg=#56b8f7] #I #W #[bg=#101319 fg=#1a2137]'
+      setw -g window-status-separator ""
+      setw -g window-status-format '#[bg=#101319 fg=#101319]#{?#{==:#I,1},█,█}#[bg=#1a2137 fg=#56b8f7] #I #W '
 
-      set -g status-right "#[bg=#101319 fg=#1a2137]#[bg=#1a2137 fg=#e5c890] #(whoami)@#H#[bg=#1a2137 fg=#1a2137] "
+      set -g status-right "#[bg=#101319 fg=#1a2137]█#[bg=#1a2137 fg=#e5c890]#(whoami)@#H#[bg=#1a2137 fg=#1a2137] "
 
       setw -g window-status-bell-style "fg=yellow bg=red bold"
       # set -g status-bg "#101319" 
