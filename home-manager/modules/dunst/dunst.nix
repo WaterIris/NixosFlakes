@@ -6,33 +6,34 @@
     settings = {
       global = {
         font = "JetBrainsMono Nerd Font";
-        corner_radius = 8;
+        corner_radius = 5;
         origin = "top-right";
-        offset = "20x20";
+        offset = "10x10";
         monitor = -1;
-        frame_width = 4;
-        background = "#292a37";
-        foreground = "#d9e0ee";
+        frame_width = 0;
+        background = "#27272a";
+        foreground = "#ffffff";
+        frame_color = "#3f3f46";
       };
 
       urgency_low = {
-        background = "#292a37";
-        highlight = "#d9e0ee";
-        frame_color = "#44465c";
+        background = "#27272a";
+        highlight = "#ffffff";
+        frame_color = "#3f3f46";
         timeout = 3;
       };
 
       urgency_normal = {
-        background = "#292a37";
-        highlight = "#d9e0ee";
-        frame_color = "#44465c";
+        background = "#27272a";
+        highlight = "#ffffff";
+        frame_color = "#3f3f46";
         timeout = 4;
       };
 
       urgency_critical = {
-        background = "#292a37";
-        highlight = "#d9e0ee";
-        frame_color = "#44465c";
+        background = "#27272a";
+        highlight = "#ffffff";
+        frame_color = "#3f3f46";
         timeout = 10;
       };  
     };

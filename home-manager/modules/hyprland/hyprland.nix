@@ -71,7 +71,6 @@
         "dunst"
         "[workspace 1 silent] kitty"
         "[workspace 2 silent] firefox"
-        "[workspace 3 silent] obsidian"
       ];
 
       misc = {
@@ -134,7 +133,7 @@
 
       general = {
         gaps_in = "0px";
-        gaps_out = "20px";
+        gaps_out = "10px";
         border_size = 0;
         "col.active_border" = "rgb(44465c)";
         "col.inactive_border" = "rgb(44465c)";
@@ -155,7 +154,7 @@
       };
       
       decoration = {
-        rounding = 10;
+        rounding = 5;
         # active_opacity = 0.95;        # slightly transparent focused windows
         # inactive_opacity = 0.9;      # more translucent unfocused ones
         fullscreen_opacity = 1.0;

@@ -1,6 +1,7 @@
 {pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
+    nixfmt-rfc-style 
     # system basics
     zip
     unzip

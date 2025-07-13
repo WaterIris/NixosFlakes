@@ -9,7 +9,6 @@
           position = "top";
           fixed-center = true;
           reload_style_on_change = true;
-          height = 36;
           modules-left = ["clock#time" "clock#calendar"];
           
           modules-center = ["hyprland/workspaces"];
@@ -57,7 +56,7 @@
               "headphone" = "";
               "default" = [""  ""  ""];
             };
-            "on-click" = "pavucontrol";
+            "on-click" = "~/.config/scripts/pavu-control.sh";
           };
 
           "network" = {
@@ -77,7 +76,7 @@
 	          tooltip-format = "{controller_alias}\n{controller_address}";
 	          tooltip-format-connected = "{controller_alias}\n{controller_address}\n{device_enumerate}";
 	          tooltip-format-enumerate-connected = "{device_alias}\n{device_address}";
-            on-click = "exec blueman-manager";
+            on-click = "~/.config/scripts/blue-man.sh";
           };
 
           "temperature" = {

@@ -32,31 +32,30 @@
       
       #  modes
       # setw -g clock-mode-colour red
-      setw -g mode-style "fg=#292a37 bg=#44465c"
+      setw -g mode-style "fg=#18181b bg=#27272a"
 
       # panes
-      set -g pane-border-style "fg=#44465c"
-      set -g pane-active-border-style "fg=#44465c"
+      set -g pane-border-style "fg=#27272a"
+      set -g pane-active-border-style "fg=#27272a"
 
       # statusbar
       set -g status-position bottom
       set -g status-justify left
       set -g status-style "fg=#83C092"
 
-      # set -g status-left "#{?client_prefix,#[bg=#e5c890 fg=#303241],#[bg=#56b8f7 fg=#303241]}   #{?client_prefix,#[#303241 fg=#e5c890],#[bg=#303241 fg=#56b8f7]}█"
-      set -g status-left "#{?client_prefix,#[bg=#d9e0ee fg=#303241],#[bg=#9699b7 fg=#303241]}   "
+      set -g status-left "#{?client_prefix,#[bg=#ffffff fg=#27272a],#[bg=#777777 fg=#27272a]}   "
       set -g status-left-length 0
 
       setw -g window-status-current-style "fg=black bg=red bold"
-      setw -g window-status-current-format '#[bg=#292a37 fg=#292a37]#{?#{==:#I,1},█,█}#[bg=#44465c fg=#d9e0ee] #I #W '
+      setw -g window-status-current-format '#[bg=#18181b fg=#18181b]#{?#{==:#I,1},█,█}#[bg=#27272a fg=#ffffff] #I #W '
 
       setw -g window-status-separator ""
-      setw -g window-status-format '#[bg=#292a37 fg=#292a37]#{?#{==:#I,1},█,█}#[bg=#44465c fg=#9699b7] #I #W '
+      setw -g window-status-format '#[bg=#18181b fg=#18181b]#{?#{==:#I,1},█,█}#[bg=#27272a fg=#777777] #I #W '
 
-      set -g status-right "#[bg=#44465c fg=#44465c]█#[bg=#44465c fg=#b77ed1]#(whoami)@#H#[bg=#44465c fg=#44465c] "
+      set -g status-right "#[bg=#b77ed1 fg=#27272a] #(whoami)@#H "
 
       setw -g window-status-bell-style "fg=yellow bg=red bold"
-      # set -g status-bg "#292a37" 
+      # set -g status-bg "#18181b" 
 
       # messages
       set -g message-style "fg=yellow bg=terminal bold"    

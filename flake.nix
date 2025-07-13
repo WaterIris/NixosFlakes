@@ -1,5 +1,5 @@
 {
-  description = "Nix by Iris";
+    description = "Nix by Iris";
   
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
