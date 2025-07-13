@@ -40,7 +40,7 @@
       "$browser" = "firefox";
       # "$run" = "rofi -show drun";
       "$run" = "wofi --show drun";
-      "$off" = "rofi -show power-menu -no-show-icons";
+      "$off" = "~/.config/scripts/power-menu.sh";
       "$mod" = "SUPER";
       "$screen_shot" = "hyprshot -m region --clipboard-only";
 

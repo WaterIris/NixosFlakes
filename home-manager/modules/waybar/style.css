@@ -1,6 +1,6 @@
 * {
   all:unset;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "JetBrainsMono Nerd Font Propo";
   font-weight: bold;
   opacity: 1.0;
@@ -23,30 +23,12 @@ window.top_bar .modules-right {
   margin-right: 20px;
 }
 
-
-#custom-separator {
-  color: #83C092;
-
-}
-
-#custom-separator_dot {
-  color: #83C092;
-}
-
 #clock.time {
   color: #9699b7;
 }
 
-#clock.week {
-  color: #b77ed1;
-}
-
-#clock.month {
-  color: #b77ed1;
-}
-
 #clock.calendar {
-  color: #56b8f7;
+  color: #9699b7;
 }
 
 
@@ -56,7 +38,7 @@ window.top_bar .modules-right {
 }
 
 #workspaces button {
-  padding: 0 5px;
+  padding: 5 10px;
   background-color: transparent;
   border-radius: 5px;
   transition: 0.3s ease-in-out;
@@ -77,7 +59,7 @@ window.top_bar .modules-right {
 }
 
 
- #clock.time,#bluetooth,#network,#pulseaudio,#temperature,#battery {
+#clock.time,#clock.calendar,#bluetooth,#network,#pulseaudio,#temperature,#battery,#custom-power {
   color: #9699b7;
   background: #44465c;
   margin: 5px;
@@ -85,7 +67,8 @@ window.top_bar .modules-right {
   border-radius: 5px;
 }
 
-#battery {
+
+#custom-power {
   margin-right: 0px;
 }
 

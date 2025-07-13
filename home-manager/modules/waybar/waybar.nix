@@ -1,5 +1,9 @@
 {...}:
 {
+  home.file.".config/waybar/power-menu.sh" = {
+    source = ./wofi-power-menu.sh;
+  };
+
   programs.waybar = {
     enable = true;
     style = ./style.css;
@@ -9,17 +13,19 @@
           position = "top";
           fixed-center = true;
           reload_style_on_change = true;
-          modules-left = ["clock#time"];
+          height = 36;
+          modules-left = ["clock#time" "clock#calendar"];
           
           modules-center = ["hyprland/workspaces"];
 
           modules-right = [
-            "bluetooth"
             "network"
+            "bluetooth"
             "pulseaudio"
             "temperature"
             "battery"
             "custom/battery"
+            "custom/power"
           ];
 
 	        "hyprland/workspaces" = {
@@ -45,23 +51,26 @@
           };  
 
           "pulseaudio" = {
-		        tooltip = true;
-		        scroll-step = 2;
-		        format = "{icon} {volume}%";
-		        format-icons = {
-			        "default" = [""  ""  ""];
-              "headphone" = " ";
-	  	      };
-            on-click = "exec pavucontrol";
-	        };
+            "format" = "{volume}% {icon} ";
+            "format-bluetooth" = "{icon} {volume}% -  {format_source}";
+            "format-bluetooth-muted" = "{icon}  -  {format_source}";
+            "format-muted" = " {format_source}";
+            "format-source" = " {volume}%";
+            "format-source-muted"= "";
+            "format-icons"= {
+              "headphone" = "";
+              "default" = [""  ""  ""];
+            };
+            "on-click" = "pavucontrol";
+          };
 
           "network" = {
-            format-wifi = "󰖩 {signalStrength}%";
-            format-ethernet = "󰈀";
-            tooltip-format = "{ifname} via {gwaddr}";
-            tooltip-format-connected = "{ipaddr}/{cidr} 󰈀";
-            format-disconnected = "󰖪 Disconnected ";
-            format-alt = "{ifname}: {ipaddr}/{cidr}";
+            "interval"= 2;
+            "format-wifi" = "↓ {bandwidthDownBits} - ↑ {bandwidthUpBits}";
+            "format-ethernet" = "↓ {bandwidthDownBits} - ↑ {bandwidthUpBits}";
+            "format-disconnected" = " Disconnected";
+            "tooltip-format" = "{ifname} via {gwaddr}";
+            "format-alt" = "{ifname}: {ipaddr}/{cidr}";
           };
 
           "bluetooth" = {
@@ -77,7 +86,7 @@
 
           "temperature" = {
             critical-threshold = 80;
-            format = "{icon} {temperatureC}°C";
+            format = "{temperatureC}°C {icon}";
             format-icons = [
               ""
               ""
@@ -93,9 +102,9 @@
               "critical" = 20;
             };
             format = "{icon}{capacity}%";
-            format-charging = " {capacity}%";
-            format-plugged = " {capacity}%";
-            format-alt = "{icon} {time}";
+            format-charging = "{capacity}% ";
+            format-plugged = "{capacity}% ";
+            format-alt = "{time}{icon}";
             format-icons = [
               " "
               " "
@@ -111,31 +120,21 @@
             timezones = [ "Europe/Warsaw" ];
           };
 
-          "custom/separator" = {
-            format = "  ";
-            tooltip = false;
-          };
-
-          "custom/separator_dot" = {
-            format = " ";
-            tooltip = false;
-          };
-
-          "clock#week" = {
-            format = "{:%a}";
-          };
-
-          "clock#month" = {
-            format = "{:%h}";
-          };
-
           "clock#calendar" = {
-            format = "{:%d-%m-%Y}";
+            format = "󰸗 {:%d-%m-%Y}";
           };
           
           "custom/battery" = {
             exec = "~/.config/notifs/battery.sh";
             interval = 120;
+          };
+
+          "custom/power"= {
+            "format"= "";
+            "tooltip"= false;
+            "on-click"= "~/.config/waybar/power-menu.sh";
+            "on-click-right"= "hyprctl dispatch exit";
+            "interval"= 60;
           };
         }
       ];
