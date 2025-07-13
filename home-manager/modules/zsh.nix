@@ -10,7 +10,7 @@
         truncate_to_repo = false;
       };
       character = {
-        success_symbol = "[](#56b8f7)";
+        success_symbol = "[](#44465c)";
         error_symbol = "[](#fb80aa)";
       };
 

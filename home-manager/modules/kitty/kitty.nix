@@ -5,8 +5,6 @@
     shellIntegration.enableZshIntegration = true;
     settings = {
       include = "colors.conf"; 
-      # Fonts
-      # font_family = "Agave Nerd Font";
       font_family = "JetBrainsMono Nerd Font";
       italic_font = "auto";
       bold_font = "auto";

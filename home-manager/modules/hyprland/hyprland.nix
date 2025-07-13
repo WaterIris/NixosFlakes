@@ -45,24 +45,22 @@
       "$screen_shot" = "hyprshot -m region --clipboard-only";
 
       workspace = [
-        "1, monitor:HDMI-A-1, default:true"
-        "2, monitor:HDMI-A-1, default:true"
-        "3, monitor:HDMI-A-1, default:true"
-        "4, monitor:HDMI-A-1, default:true"
-        "5, monitor:HDMI-A-1, default:true"
-        "6, monitor:HDMI-A-1, default:true"
-        "9, monitor:eDP-1, default:true"
+        "1, default:true"
+        "2, default:true"
+        "3, default:true"
+        "4, default:true"
+        "5, default:true"
       ];
 
       windowrulev2 = [ 
-        # "opacity 0.90, focus:1"
-        # "opacity 0.70, focus:0"
+        "opacity 0.95, focus:1"
+        "opacity 0.90, focus:0"
 
-        # "opacity 1.00,focus:1,class:firefox"
-        # "opacity 0.80,focus:0,class:firefox"
+        "opacity 1.00,focus:1,class:firefox"
+        "opacity 0.90,focus:0,class:firefox"
           
-        "opacity 0.95,focus:1,class:kitty"
-        "opacity 0.95,focus:0,class:kitty"
+        # "opacity 0.95,focus:1,class:kitty"
+        # "opacity 0.95,focus:0,class:kitty"
 
         # "opacity 0.90,focus:1,class:obsidian"
         # "opacity 0.90,focus:0,class:obsidian"
@@ -106,23 +104,20 @@
         "Alt, Tab, cyclenext,"
         "$mod, U, layoutmsg, swapsplit"
         "$mod, I, layoutmsg, togglesplit"
-        "$mod, O, togglefloating,"
+        "$mod, O, togglefloating"
+        "$mod, y, fullscreen"
 
 	      "$mod, 1, workspace, 1"
 	      "$mod, 2, workspace, 2"
 	      "$mod, 3, workspace, 3"
 	      "$mod, 4, workspace, 4"
 	      "$mod, 5, workspace, 5"
-	      "$mod, 6, workspace, 6"
-	      "$mod, 9, workspace, 9"
 
 	      "$mod+Shift, 1, movetoworkspace, 1"
 	      "$mod+Shift, 2, movetoworkspace, 2"
 	      "$mod+Shift, 3, movetoworkspace, 3"
 	      "$mod+Shift, 4, movetoworkspace, 4"
 	      "$mod+Shift, 5, movetoworkspace, 5"
-	      "$mod+Shift, 6, movetoworkspace, 6"
-	      "$mod+Shift, 9, movetoworkspace, 9"
       ];
       
       binde = [
@@ -141,8 +136,8 @@
         gaps_in = "0px";
         gaps_out = "20px";
         border_size = 0;
-        "col.active_border" = "rgb(313244)";
-        "col.inactive_border" = "rgb(313244)";
+        "col.active_border" = "rgb(44465c)";
+        "col.inactive_border" = "rgb(44465c)";
         layout = "dwindle";
         
       };
@@ -160,18 +155,31 @@
       };
       
       decoration = {
-        rounding = 0;
-        blur = {
-          enabled = true;
+        rounding = 10;
+        # active_opacity = 0.95;        # slightly transparent focused windows
+        # inactive_opacity = 0.9;      # more translucent unfocused ones
+        fullscreen_opacity = 1.0;
+
+        shadow = {
+            enabled = true;
+            range = 4;
+            render_power = 3;
+            color = "rgba(1a1a1aee)";
         };
-        # shadow ={
-          # enabled = true;
-          # range = 15;
-          # render_power = 3;
-          # offset = "0, 0";
-          # color = "rgb(313244)";
-          # color_inactive = "rgb(313244)";
-        # };
+
+        blur = {
+            enabled = true;
+            size = 6;                # blur radius
+            passes = 2;              # quality (more passes = smoother)
+            ignore_opacity = true;   # blur background even behind transparent windows :contentReference[oaicite:2]{index=2}
+            new_optimizations = true;
+            xray = false;
+            noise = 0;
+            brightness = 0.9;
+            vibrancy = 0.17;
+            popups = false;           # Disable blur behind all popups
+            popups_ignorealpha = 0.2;
+        };
       };
 
       bezier = [

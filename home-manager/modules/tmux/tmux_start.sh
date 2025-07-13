@@ -10,7 +10,7 @@ if tmux ls | grep -q "iris_session"; then
 else
   clear
   dunstify "No tmux session running" "Starting new instance" -r 1312
-  tmux new-session -d -s iris_session -n nix
+  tmux new-session -d -s iris_session -n dots
   tmux send-keys -t iris_ses "cd ~/.config/NixosFlakes" C-m
   tmux send-keys -t iris_ses "clear" C-m
   tmux new-window -t iris_ses -n code
