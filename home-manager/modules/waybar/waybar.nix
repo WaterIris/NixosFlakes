@@ -1,9 +1,5 @@
 {...}:
 {
-  home.file.".config/waybar/power-menu.sh" = {
-    source = ./wofi-power-menu.sh;
-  };
-
   programs.waybar = {
     enable = true;
     style = ./style.css;
@@ -125,14 +121,14 @@
           };
           
           "custom/battery" = {
-            exec = "~/.config/notifs/battery.sh";
+            exec = "~/.config/scripts/battery_notification/battery.sh";
             interval = 120;
           };
 
           "custom/power"= {
             "format"= "";
             "tooltip"= false;
-            "on-click"= "~/.config/waybar/power-menu.sh";
+            "on-click"= "~/.config/scripts/power-menu.sh";
             "on-click-right"= "hyprctl dispatch exit";
             "interval"= 60;
           };

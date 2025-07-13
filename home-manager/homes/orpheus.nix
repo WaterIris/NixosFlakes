@@ -11,7 +11,6 @@
     ../modules/waybar/waybar.nix
     ../modules/kitty/kitty.nix
     ../modules/zsh.nix
-    ../modules/rofi/rofi.nix
     ../modules/git.nix
     ../modules/direnv.nix
     ../modules/bg/bg.nix
@@ -19,6 +18,7 @@
     ../modules/bash.nix
     ../modules/tmux/tmux.nix
     ../modules/wofi/wofi.nix
+    ../modules/scripts
   ];
 
   programs.home-manager.enable = true;

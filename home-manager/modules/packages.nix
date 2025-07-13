@@ -1,7 +1,6 @@
 {pkgs, inputs, ...}:
 {
   home.packages = with pkgs; [
-    chromium
     # system basics
     zip
     unzip
@@ -24,7 +23,6 @@
     inputs.nixvim.packages.${system}.default
     dua
     # apps
-    # chromium
     hyprpicker
     qbittorrent
     blueman
